@@ -471,8 +471,6 @@
 		"network_block_explorer_placeholder": "URL do Block Explorer (opcional)",
 		"network_chain_id_warning": "ID da chain inválida",
 		"network_other_networks": "Outras redes",
-		"network_rpc_networks": "Redes RPC",
-		"network_add_network": "Adicionar rede",
 		"network_add": "Adicionar",
 		"network_save": "Salvar",
 		"remove_network_title": "Deseja remover esta rede?",

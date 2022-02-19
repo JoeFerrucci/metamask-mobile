@@ -471,8 +471,6 @@
 		"network_block_explorer_placeholder": "ブロック エクスプローラーの URL (オプション)",
 		"network_chain_id_warning": "無効なチェーン ID",
 		"network_other_networks": "他のネットワーク",
-		"network_rpc_networks": "RPC ネットワーク",
-		"network_add_network": "ネットワークの追加",
 		"network_add": "追加",
 		"network_save": "保存",
 		"remove_network_title": "このネットワークを削除しますか?",

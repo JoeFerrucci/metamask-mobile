@@ -471,8 +471,6 @@
 		"network_block_explorer_placeholder": "ब्लॉक एक्सप्लोरर URL (वैकल्पिक)",
 		"network_chain_id_warning": "अमान्य चेन ID",
 		"network_other_networks": "अन्य नेटवर्क",
-		"network_rpc_networks": "RPC नेटवर्क",
-		"network_add_network": "नेटवर्क जोड़ें",
 		"network_add": "जोड़ें",
 		"network_save": "सहेजें",
 		"remove_network_title": "क्या आप इस नेटवर्क को निकालना चाहते हैं?",

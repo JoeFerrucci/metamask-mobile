@@ -471,8 +471,6 @@
 		"network_block_explorer_placeholder": "URL Block Explorer (opsional)",
 		"network_chain_id_warning": "ID Rantai Tidak Valid",
 		"network_other_networks": "Jaringan Lain",
-		"network_rpc_networks": "Jaringan RPC",
-		"network_add_network": "Tambahkan Jaringan",
 		"network_add": "Tambah",
 		"network_save": "Simpan",
 		"remove_network_title": "Anda ingin menghapus jaringan ini?",

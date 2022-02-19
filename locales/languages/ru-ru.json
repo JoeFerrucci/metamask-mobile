@@ -470,8 +470,6 @@
 		"network_block_explorer_label": "URL-адрес проводника блоков",
 		"network_block_explorer_placeholder": "URL-адрес проводника блоков (необязательно)",
 		"network_chain_id_warning": "Недействительный идентификатор цепочки",
-		"network_other_networks": "Другие сети",
-		"network_rpc_networks": "Сети RPC",
 		"network_add_network": "Добавить сеть",
 		"network_add": "Добавить",
 		"network_save": "Сохранить",

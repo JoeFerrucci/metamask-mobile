@@ -471,8 +471,6 @@
 		"network_block_explorer_placeholder": "URL trình khám phá khối (không bắt buộc)",
 		"network_chain_id_warning": "Mã chuỗi không hợp lệ",
 		"network_other_networks": "Mạng khác",
-		"network_rpc_networks": "Mạng RPC",
-		"network_add_network": "Thêm mạng",
 		"network_add": "Thêm",
 		"network_save": "Lưu",
 		"remove_network_title": "Bạn có muốn xóa mạng này không?",

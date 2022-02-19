@@ -471,8 +471,6 @@
 		"network_block_explorer_placeholder": "블록 탐색기 URL(선택 사항)",
 		"network_chain_id_warning": "잘못된 체인 ID",
 		"network_other_networks": "다른 네트워크",
-		"network_rpc_networks": "RPC 네트워크",
-		"network_add_network": "네트워크 추가",
 		"network_add": "추가",
 		"network_save": "저장",
 		"remove_network_title": "이 네트워크를 제거할까요?",

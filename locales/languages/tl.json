@@ -471,8 +471,6 @@
 		"network_block_explorer_placeholder": "URL ng Block Explorer (opsyonal)",
 		"network_chain_id_warning": "Hindi valid ang Chain ID",
 		"network_other_networks": "Iba Pang Network",
-		"network_rpc_networks": "Mga RPC Network",
-		"network_add_network": "Magdagdag ng Network",
 		"network_add": "Magdagdag",
 		"network_save": "I-save",
 		"remove_network_title": "Gusto mo bang tanggalin ang network na ito?",

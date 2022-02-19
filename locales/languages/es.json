@@ -470,8 +470,6 @@
 		"network_block_explorer_label": "Dirección URL del explorador de bloques",
 		"network_block_explorer_placeholder": "Dirección URL del explorador de bloques (opcional)",
 		"network_chain_id_warning": "Identificador de cadena no válido",
-		"network_other_networks": "Otras redes",
-		"network_rpc_networks": "Redes RPC",
 		"network_add_network": "Agregar red",
 		"network_add": "Agregar",
 		"network_save": "Guardar",

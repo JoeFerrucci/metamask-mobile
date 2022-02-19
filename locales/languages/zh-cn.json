@@ -444,8 +444,6 @@
 		"network_block_explorer_placeholder": "区块浏览器 URL（可选）",
 		"network_chain_id_warning": "链 ID 无效",
 		"network_other_networks": "其他网络",
-		"network_rpc_networks": "RPC 网络",
-		"network_add_network": "添加网络",
 		"network_add": "添加",
 		"network_save": "保存",
 		"remove_network_title": "是否要删除此网络？",
