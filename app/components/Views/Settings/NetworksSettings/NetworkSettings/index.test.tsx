@@ -13,6 +13,9 @@ const initialState = {
 			},
 		},
 	},
+	privacy: {
+		thirdPartyApiMode: true,
+	},
 };
 const store = mockStore(initialState);
 
