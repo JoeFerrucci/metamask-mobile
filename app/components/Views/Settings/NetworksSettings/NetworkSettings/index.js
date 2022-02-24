@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import { StyleSheet, Text, View, TextInput, SafeAreaView, Image, Linking } from 'react-native';
+import { StyleSheet, Text, View, TextInput, SafeAreaView, Linking } from 'react-native';
 import { connect } from 'react-redux';
-import FadeIn from 'react-native-fade-in-image';
+import AssetIcon from '../../../../../components/UI/AssetIcon';
 import { colors, fontStyles } from '../../../../../styles/common';
 import { getNavigationOptionsTitle } from '../../../../UI/Navbar';
 import { strings } from '../../../../../../locales/i18n';
@@ -120,10 +120,6 @@ const styles = StyleSheet.create({
 	},
 	icon: {
 		marginRight: 10,
-	},
-	placeholderStyle: {
-		color: colors.grey500,
-		borderRadius: 15,
 	},
 	button: {
 		flex: 1,
@@ -722,9 +718,7 @@ class NetworkSettings extends PureComponent {
 					/>
 				)}
 				<View style={styles.popularWrapper}>
-					<FadeIn placeholderStyle={styles.placeholderStyle}>
-						<Image source={{ uri: item.rpcPrefs.imageUrl || null }} style={styles.popularNetworkImage} />
-					</FadeIn>
+					<AssetIcon logo={item.rpcPrefs.imageUrl} customStyle={styles.popularNetworkImage} />
 					<CustomText bold black>
 						{item.nickname}
 					</CustomText>

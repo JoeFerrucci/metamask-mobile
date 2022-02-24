@@ -500,4 +500,10 @@ export default {
 	'inj.svg': require('metamask/node_modules/@metamask/contract-metadata/images/inj.svg'),
 	'spwn.svg': require('metamask/node_modules/@metamask/contract-metadata/images/spwn.svg'),
 	'polkadog.svg': require('metamask/node_modules/@metamask/contract-metadata/images/polkadog.svg'),
+	'eth.svg': require('./ethereum.svg'),
+	'matic.svg': require('./matic.svg'),
+	'harmony.svg': require('./harmony.svg'),
+	'fantom.svg': require('./fantom.svg'),
+	'avalanche.svg': require('./avalanche.svg'),
+	'optimism.svg': require('./optimism.svg'),
 };
