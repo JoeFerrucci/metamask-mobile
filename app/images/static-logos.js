@@ -506,4 +506,6 @@ export default {
 	'fantom.svg': require('./fantom.svg'),
 	'avalanche.svg': require('./avalanche.svg'),
 	'optimism.svg': require('./optimism.svg'),
+	'binance.svg': require('./binance.svg'),
+	'arbitrum.svg': require('./arbitrum.svg'),
 };
