@@ -11,8 +11,8 @@ import { getNavigationOptionsTitle } from '../../../UI/Navbar';
 import { strings } from '../../../../../locales/i18n';
 import Networks, { getAllNetworks } from '../../../../util/networks';
 import StyledButton from '../../../UI/StyledButton';
-import PopularList from '../../../../util/networks/customNetworks';
 import Engine from '../../../../core/Engine';
+import getImage from '../../../../util/getImage';
 import { MAINNET, RPC } from '../../../../constants/network';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
@@ -196,17 +196,11 @@ class NetworksSettings extends PureComponent {
 		});
 	}
 
-	showImage = (chainId) => {
-		const customNetworkData = PopularList.filter((x) => x.chainId === chainId);
-		const image = customNetworkData.length > 0 ? customNetworkData[0].rpcPrefs.imageUrl : null;
-		return image;
-	};
-
 	renderRpcNetworks = () => {
 		const { frequentRpcList } = this.props;
 		return frequentRpcList.map(({ rpcUrl, nickname, chainId }, i) => {
 			const { name } = { name: nickname || rpcUrl };
-			const image = this.showImage(chainId);
+			const image = getImage(chainId);
 			return this.networkElement(name, image, i, rpcUrl, true);
 		});
 	};
@@ -230,7 +224,7 @@ class NetworksSettings extends PureComponent {
 				<TouchableOpacity
 					style={styles.network}
 					key={`network-${MAINNET}`}
-					onPress={() => this.onNetworkPress(MAINNET)} // eslint-disable-line
+					onPress={() => this.onNetworkPress(MAINNET)}
 				>
 					<View style={styles.networkWrapper}>
 						<AssetIcon logo={'eth.svg'} customStyle={styles.networkIcon} />
@@ -271,7 +265,7 @@ class NetworksSettings extends PureComponent {
 		if (this.state.filteredNetworks.length > 0) {
 			return this.state.filteredNetworks.map((data, i) => {
 				const { network, chainId, name, color, isCustomRPC } = data;
-				const image = this.showImage(chainId);
+				const image = getImage(chainId);
 				return this.networkElement(name, image || color, i, network, isCustomRPC);
 			});
 		}
