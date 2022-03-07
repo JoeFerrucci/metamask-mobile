@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ActionSheet from 'react-native-actionsheet';
 import CustomText from '../../../../components/Base/Text';
-import AssetIcon from '../../../../components/UI/AssetIcon';
 import { colors, fontStyles } from '../../../../styles/common';
 import { getNavigationOptionsTitle } from '../../../UI/Navbar';
 import { strings } from '../../../../../locales/i18n';
@@ -15,6 +14,7 @@ import Engine from '../../../../core/Engine';
 import getImage from '../../../../util/getImage';
 import { MAINNET, RPC } from '../../../../constants/network';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import ImageIcons from '../../../UI/ImageIcon';
 
 const styles = StyleSheet.create({
 	wrapper: {
@@ -167,12 +167,17 @@ class NetworksSettings extends PureComponent {
 				) : (
 					<TouchableOpacity
 						key={`network-${i}`}
-						onPress={() => this.onNetworkPress(network)} // eslint-disable-line
-						onLongPress={() => isCustomRPC && this.showRemoveMenu(network)} // eslint-disable-line
+						onPress={() => this.onNetworkPress(network)}
+						onLongPress={() => isCustomRPC && this.showRemoveMenu(network)}
 						testID={'select-network'}
 					>
 						<View style={styles.network}>
-							{isCustomRPC && <AssetIcon logo={image} customStyle={styles.networkIcon} />}
+							{isCustomRPC &&
+								(image ? (
+									<ImageIcons image={image} style={styles.networkIcon} />
+								) : (
+									<View style={[styles.networkIcon, { backgroundColor: colors.grey000 }]} />
+								))}
 							{!isCustomRPC && (
 								<View style={[styles.networkIcon, { backgroundColor: image }]}>
 									<Text style={styles.text}>{name[0]}</Text>
@@ -227,7 +232,7 @@ class NetworksSettings extends PureComponent {
 					onPress={() => this.onNetworkPress(MAINNET)}
 				>
 					<View style={styles.networkWrapper}>
-						<AssetIcon logo={'eth.svg'} customStyle={styles.networkIcon} />
+						<ImageIcons image="ethereum" style={styles.networkIcon} />
 						<View style={styles.networkInfo}>
 							<Text style={styles.networkLabel}>{mainnetName}</Text>
 						</View>
