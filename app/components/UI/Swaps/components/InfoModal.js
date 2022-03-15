@@ -4,7 +4,6 @@ import { StyleSheet, View, TouchableOpacity, SafeAreaView } from 'react-native';
 import Modal from 'react-native-modal';
 import Text from '../../../Base/Text';
 import IonicIcon from 'react-native-vector-icons/Ionicons';
-import Text from '../../../Base/Text';
 import Title from '../../../Base/Title';
 import { colors } from '../../../../styles/common';
 
